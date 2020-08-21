@@ -5,10 +5,9 @@ import EditableTimer from "./EditableTimer";
 export default function EditableTimerList() {
   return (
     <div className="editableTimerListContainer">
-<div className="editableTimerContainer">
-      <EditableTimer />
-      </div>
+
       <div className="editableTimerContainer">
+      <div className="logoHolder"></div>
       <EditableTimer />
       </div>
     </div>

@@ -1,22 +1,29 @@
 .container {
     width: 20%;
     margin:0 auto;
-    border:2px solid rgb(165, 160, 160);
     height: auto;
     margin-top:30px;
     padding:5px;
 }
 
 .editableTimerListContainer {
-    width: 80%;
     margin:0 auto;
     
     border-radius: 15px;
-    padding:25px;
     display: flex;
     flex-flow: column;
 }
-
+.logoHolder {
+    background-image: url(../images/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+   
+    margin-bottom: 10px;
+}
 .editableTimerContainer {
     width: 80%;
     margin:0 auto;
@@ -29,6 +36,13 @@
 .timerContainer {
     display: flex;
     flex-flow: column;
+    width: 80%;
+    margin:0 auto;
+    background-color: rgb(248, 241, 241);
+    border:2px solid gray;
+    border-radius: 15px;
+    padding:25px;
+    margin-bottom: 10px; 
 }
 h1 {
     margin-bottom: 5px;
@@ -71,13 +85,14 @@ time {
     margin-bottom: 15px;
 }
 .timerBtn {
-    padding:20px;
+    padding:10px;
     background-color: rgb(184, 179, 179);
     color:black;
     font-size: 22px;
+    width: 100px;
+    margin:0 auto;
 }
 .timerBtn:hover {
-    padding:20px;
     background-color: rgb(138, 135, 135);
     color:black;
     font-size: 22px;
