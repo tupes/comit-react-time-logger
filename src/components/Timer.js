@@ -1,11 +1,15 @@
 import React from "react";
-// import { faHeart, faHamburger } from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTrash,
   faEdit,
 } from "@fortawesome/free-solid-svg-icons";
 export default function Timer() {
+  
+  function toggleFavorite(event) {
+event.preventDefault();
+  }
   return (
     <div>
       <div className="timerContainer">
@@ -13,10 +17,11 @@ export default function Timer() {
         <p>House Chores</p>
         <time>01:12:36</time>
       <div className="fontAwesomeBinder">
-        <FontAwesomeIcon className="iconTrashAndEdit" icon={faTrash} />
-        <FontAwesomeIcon className="iconTrashAndEdit" icon={faEdit} />
+      <i className="fa fa-trash-o"  onClick={(e) => this.toggleFavorite()} > <FontAwesomeIcon className="iconTrashAndEdit" icon={faTrash} /> </i>
+      <i className="fa fa-edit-o"  onClick={(e) => this.toggleFavorite()} > <FontAwesomeIcon className="iconTrashAndEdit" icon={faEdit} /></i>  
+      
         </div>
-
+       
       <button className="timerBtn">START</button>
       </div>
     </div>
