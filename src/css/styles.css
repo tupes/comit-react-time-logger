@@ -33,21 +33,30 @@
 h1 {
     margin-bottom: 5px;
     padding-bottom:5px;
-    font-size: medium;
+    font-size: larger;
+    font-weight: bolder;
     border-bottom: 1px dotted black;
 }
 p {
     margin:0 0 15px 0;
     padding:0px;
-    font-size: small;
+    font-size: large;
+}
+time {
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 15px;
 }
 .timerBtn {
     padding:20px;
     background-color: rgb(184, 179, 179);
-    color:black
+    color:black;
+    font-size: 22px;
 }
 .timerBtn:hover {
     padding:20px;
     background-color: rgb(138, 135, 135);
-    color:black
+    color:black;
+    font-size: 22px;
 }
