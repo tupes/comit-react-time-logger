@@ -1,24 +1,19 @@
 import React from "react";
+import "../css/styles.css";
 
 export default function TimerForm() {
   return (
-    <div>
-      <div>
-        <div>
-          <div>
-            <label>Title</label>
-            <input type="text" />
-          </div>
-          <div>
-            <label>Project</label>
-            <input type="text" />
-          </div>
-          <div>
-            <button></button>
-            <button></button>
-          </div>
-        </div>
+    
+      <div className="timerContainer">
+        <h2>Title</h2>
+        <input type="text"/>
+        <h2>Project</h2>
+        <input type="text"/>
+        <div className="updateAndDeleteBtnBinder">
+      <button className="updateAndDeleteBtn">Update</button>
+      <button className="updateAndDeleteBtn">Delete</button>
       </div>
-    </div>
+      </div>
+   
   );
 }

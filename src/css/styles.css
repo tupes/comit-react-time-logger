@@ -1,16 +1,16 @@
 .container {
     width: 20%;
     margin:0 auto;
-
+    border:2px solid rgb(165, 160, 160);
     height: auto;
     margin-top:30px;
-    
+    padding:5px;
 }
 
 .editableTimerListContainer {
     width: 80%;
     margin:0 auto;
-    border:2px solid rgb(165, 160, 160);
+    
     border-radius: 15px;
     padding:25px;
     display: flex;
@@ -36,6 +36,17 @@ h1 {
     font-size: larger;
     font-weight: bolder;
     border-bottom: 1px dotted black;
+}
+h2 {
+    margin-bottom: 5px;
+    padding-bottom:5px;
+    font-size: large;
+    font-weight: bolder;
+    border-bottom: 1px dotted black;
+}
+input {
+    height: 45px;
+    font-size: large;
 }
 p {
     margin:0 0 15px 0;
@@ -70,4 +81,30 @@ time {
     background-color: rgb(138, 135, 135);
     color:black;
     font-size: 22px;
+}
+.updateAndDeleteBtnBinder {
+    display: flex;
+    flex-flow: row;    
+    margin-top: 15px;
+}
+.updateAndDeleteBtn {
+    padding:10px;
+    background-color: rgb(138, 135, 135);
+    color:black;
+    font-size: 22px; 
+    margin:0 15px 0 0; 
+   
+}
+.updateAndDeleteBtn:hover {
+   
+    background-color: rgb(121, 118, 118);
+   
+}
+.toggleAbleTimerBtn {
+    width: 100%;
+    padding:20px;
+    background-color: rgb(184, 179, 179);
+    color:black;
+    font-size: 22px;
+    margin: 0 auto;
 }
