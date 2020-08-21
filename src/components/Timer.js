@@ -12,9 +12,10 @@ export default function Timer() {
         <h1>Mow the lawn</h1>
         <p>House Chores</p>
         <time>01:12:36</time>
-        <FontAwesomeIcon icon={faTrash} />
-        <FontAwesomeIcon icon={faEdit} />
-        
+      <div className="fontAwesomeBinder">
+        <FontAwesomeIcon className="iconTrashAndEdit" icon={faTrash} />
+        <FontAwesomeIcon className="iconTrashAndEdit" icon={faEdit} />
+        </div>
 
       <button className="timerBtn">START</button>
       </div>

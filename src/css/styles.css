@@ -42,6 +42,16 @@ p {
     padding:0px;
     font-size: large;
 }
+.fontAwesomeBinder {
+    display: flex;
+    width: 40px;
+    margin-bottom: 18px;
+    
+}
+.iconTrashAndEdit {
+    font-size: x-large;
+    margin-right: 10px;
+}
 time {
     font-size: 22px;
     font-weight: bolder;
