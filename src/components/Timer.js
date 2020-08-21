@@ -3,22 +3,11 @@ import React from "react";
 export default function Timer() {
   return (
     <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div>
-          <h2>Timer Header</h2>
-        </div>
-        <div>
-          <span>
-            <i />
-          </span>
-          <span>
-            <i />
-          </span>
-        </div>
+      <div className="timerContainer">
+        <h1>Mow the lawn</h1>
+        <p>House Chores</p>
+      <button className="timerBtn">Start</button>
       </div>
-      <div>Start</div>
     </div>
   );
 }

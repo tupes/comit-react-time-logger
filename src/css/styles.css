@@ -24,6 +24,30 @@
     border:2px solid gray;
     border-radius: 15px;
     padding:25px;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;   
+}
+.timerContainer {
+    display: flex;
+    flex-flow: column;
+}
+h1 {
+    margin-bottom: 5px;
+    padding-bottom:5px;
+    font-size: medium;
+    border-bottom: 1px dotted black;
+}
+p {
+    margin:0 0 15px 0;
+    padding:0px;
+    font-size: small;
+}
+.timerBtn {
+    padding:20px;
+    background-color: rgb(184, 179, 179);
+    color:black
+}
+.timerBtn:hover {
+    padding:20px;
+    background-color: rgb(138, 135, 135);
+    color:black
 }
