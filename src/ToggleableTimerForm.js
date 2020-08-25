@@ -1,6 +1,8 @@
 import React from "react";
 
 import TimerForm from "./TimerForm";
+import { FaPlus } from 'react-icons/fa';
+
 
 export default function ToggleableTimerForm() {
   const isOpen = false;
@@ -10,8 +12,8 @@ export default function ToggleableTimerForm() {
   } else {
     return (
       <div className="ui basic content center aligned segment">
-        <button className="ui basic button icon">
-          <i className="plus icon" />
+        <button className="toggleAddButton">
+          <FaPlus/>
         </button>
       </div>
     );

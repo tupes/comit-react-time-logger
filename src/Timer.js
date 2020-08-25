@@ -1,24 +1,35 @@
 import React from "react";
+import { FaTrash } from 'react-icons/fa';
+import { FaEdit } from 'react-icons/fa';
+import './index.css'
 
-export default function Timer() {
+export default function Timer(props) {
   return (
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div>
-          <h2>Timer Header</h2>
-        </div>
-        <div>
+    <div >
+        {props.timers.map(timer=>
+        (
+          <div className='timer'>
+          <h1>{timer.project}</h1>
+          <h2>{timer.title}</h2>
+          <div>
           <span>
-            <i />
+            <FaTrash/>
           </span>
           <span>
-            <i />
+            <FaEdit />
           </span>
-        </div>
       </div>
-      <div>Start</div>
+      <button>Start</button>
+          </div>
+          
+        )
+        )
+        }
+    
+      
+
+
     </div>
+    
   );
 }
