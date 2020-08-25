@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../css/styles.css";
 import TimerForm from "./TimerForm";
 
 export default function ToggleableTimerForm() {
@@ -9,11 +9,7 @@ export default function ToggleableTimerForm() {
     return <TimerForm />;
   } else {
     return (
-      <div className="ui basic content center aligned segment">
-        <button className="ui basic button icon">
-          <i className="plus icon" />
-        </button>
-      </div>
+      <button className="toggleAbleTimerBtn">Add new Timer</button>
     );
   }
 }
