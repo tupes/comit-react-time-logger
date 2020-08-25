@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function TimerForm() {
+export default function TimerForm(props) {
   return (
     <div>
       <div>
@@ -14,8 +14,8 @@ export default function TimerForm() {
             <input type="text" />
           </div>
           <div>
-            <button></button>
-            <button></button>
+            <button>Delete</button>
+            <button>Edit</button>
           </div>
         </div>
       </div>

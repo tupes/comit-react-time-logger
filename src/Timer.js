@@ -1,24 +1,19 @@
 import React from "react";
 
 export default function Timer() {
+  
   return (
-    <div>
+    <div className="timerContrainer">
       <div>
-        <div></div>
-        <div></div>
-        <div>
-          <h2>Timer Header</h2>
-        </div>
-        <div>
-          <span>
-            <i />
-          </span>
-          <span>
-            <i />
-          </span>
-        </div>
+        
+  <h3>Learn react</h3>
+        <h4>web Donimation</h4>
+        <div>Time</div>
+         <span> D </span>
+        <span> E  </span>
       </div>
-      <div>Start</div>
+      <div>
+        <button> Start</button></div>
     </div>
   );
 }

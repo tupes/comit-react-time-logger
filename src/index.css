@@ -1,0 +1,11 @@
+.timerHeader{
+    background-color:lightblue;
+    color:red;
+    align-self:center;
+}
+.timerContrainer{
+    display:flexbox;
+    border:1px solid #222222;
+   padding:1rem; 
+
+}
