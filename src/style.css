@@ -81,7 +81,6 @@
   display: flex;
   flex-direction: row;
   padding: 0.5em 12em;
-  justify-content: space-between;
 }
 
 .right-floated-edit-icon, .right-floated-trash-icon{
@@ -91,8 +90,8 @@
 }
 
 .toggableTimerForm{
-  display: flex;
-  flex-direction: row;
+  align-self: center;
+  border: none;
 }
 
 .timer-form{

@@ -11,7 +11,7 @@ export default function ToggleableTimerForm(isOpen) {
       this.setState({ isOpen : true})
 
   }
-  if (state) {
+  if (state === isOpen) {
     return <TimerForm />;
   } else {
     return (
