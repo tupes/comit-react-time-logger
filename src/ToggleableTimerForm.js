@@ -2,16 +2,22 @@ import React from "react";
 
 import TimerForm from "./TimerForm";
 
-export default function ToggleableTimerForm() {
-  const isOpen = false;
+export default function ToggleableTimerForm(isOpen) {
+  const state = {
+    isOpen: false,
+    };
 
-  if (isOpen) {
+  const handleFormOpen = () => {
+      this.setState({ isOpen : true})
+
+  }
+  if (state === isOpen) {
     return <TimerForm />;
   } else {
     return (
-      <div className="ui basic content center aligned segment">
-        <button className="ui basic button icon">
-          <i className="plus icon" />
+      <div className="toggableTimerForm">
+        <button className="plusButton" onClick={handleFormOpen}>
+          <i className="fa fa-plus"/>
         </button>
       </div>
     );
