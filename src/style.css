@@ -1,0 +1,128 @@
+:root {
+  margin:0 auto;
+  width: 20%;
+  height: auto;
+  margin-top:20px;
+  }
+
+.timer-dashboard{
+  display: flex;
+  flex-flow: column;
+  width: 100% ;
+  margin:0 auto;
+  background-color: whitesmoke;
+  border: 1px solid silver;
+  border-radius: 15px;
+  margin-bottom: 10px; 
+  gap: 0.25em;
+  padding: 20px 20px;
+}
+
+.ui-centered-card {     
+  display: flex;
+  flex-flow: column;
+  width: 90% ;
+  margin:0 auto;
+  background-color: rgb(146,215,185);
+  border:0.5px solid silver;
+  border-radius: 15px;
+  margin-bottom: 10px; 
+  gap: 0.25em;
+  padding: 15px 15px;
+}
+
+.content {
+  width: 100%;
+  margin:0 auto;
+  border:none;
+}
+
+.start-button {
+  width: 100%;
+  font-family: Helvetica, Arial,sans-serif ;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  color:gray;
+  }
+
+.start-button-div {
+    width: 100%;
+    border: 3px #bbb;
+    }
+
+.title {
+  font-family: Helvetica, Arial,sans-serif ;
+  font-size: medium;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  font-weight: bolder;
+  border-bottom: 1px solid gray;
+}
+
+.project {
+  font-family: Helvetica, Arial,sans-serif ;
+  font-size: small;
+  color: darkgray;
+  font-weight: bold;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+
+.timer-header {
+  font-family: Helvetica, Arial,sans-serif ;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.icon-div{
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em 12em;
+  justify-content: space-between;
+}
+
+.right-floated-edit-icon, .right-floated-trash-icon{
+  color:darkslategray;
+  font-size: larger;
+  position: relative;
+}
+
+.toggableTimerForm{
+  display: flex;
+  flex-direction: row;
+}
+
+.timer-form{
+  display:inline;
+  background-color: rgb(146,215,185);
+}
+
+.timer-form-title {
+  font-family: Helvetica, Arial,sans-serif ;
+  font-size: medium;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  font-weight: bolder;
+}
+
+.timer-form-project {
+  font-family: Helvetica, Arial,sans-serif ;
+  font-size: medium;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  font-weight: bolder;
+}
+
+.update-cancel-buttons {
+  width: 100%;
+  padding-top: 1rem;
+  font-family: Helvetica, Arial,sans-serif ;
+  font-size: large;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  color:gray;
+}
