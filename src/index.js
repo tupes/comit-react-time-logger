@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import './index.css';
 
-import App from "./TimersDashboard";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+
+import TimersDashboard from "./TimersDashboard";
+
+ReactDOM.render(<TimersDashboard />, document.getElementById("root"));

@@ -1,14 +1,24 @@
-import React from "react";
+import React,{ useState} from "react";
 
 import TimerForm from "./TimerForm";
 import Timer from "./Timer";
 
-export default function EditableTimer() {
-  const editFormOpen = false;
+export default function EditableTimer(props) {
+const[editFormOpen,seteditFormOpen]=useState(false);
 
   if (editFormOpen) {
-    return <TimerForm />;
+    return <TimerForm 
+    id={props.id}
+    title={props.title}
+    project={props.project}
+    />;
   } else {
-    return <Timer />;
+    return <Timer 
+      id={props.id}
+      title={props.title}
+      project={props.project}
+      elapsed={props.elapsed}
+      runningSince={props.runningSince}
+    />;
   }
 }
