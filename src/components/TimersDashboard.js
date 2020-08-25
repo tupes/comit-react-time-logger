@@ -10,7 +10,7 @@ export default function TimersDashboard() {
       <div className="container">
        
         <EditableTimerList />
-        <ToggleableTimerForm />
+        <ToggleableTimerForm isOpen={false}/>
       </div>
     </div>
   );
