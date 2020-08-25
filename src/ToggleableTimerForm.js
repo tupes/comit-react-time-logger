@@ -18,8 +18,6 @@ export default function ToggleableTimerForm(props) {
     setisOpen(false);
 
   }
-
-
   if (isOpen) {
     return <TimerForm 
     onFormSubmit={handleFormSubmit}
