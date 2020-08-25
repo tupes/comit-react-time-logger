@@ -62,14 +62,16 @@
     color:grey;
     font-size:0.8em;
   }
-  .center>h2{
+  .center-timer{
     text-align: center;
     color:rgba(0, 0, 0, 0.568);
   }
+  .icons{
+    text-align: right;
+    font-size: 0.8em;
+  }
   .iconTrashAndEdit
   {
-    position: relative;
-    left: 9em;
     margin-right: 1em;
     margin-bottom: 1em;
     cursor: pointer;

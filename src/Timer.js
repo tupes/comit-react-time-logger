@@ -22,7 +22,7 @@ export default function Timer(props) {
         <div className="center-timer">
          <h2>{elapsedString}</h2>
         </div>
-        <div className="extra content">
+        <div className="icons">
           <span className="right floated edit icon">
           <i class="fa fa-trash-o"> 
           <FontAwesomeIcon className="iconTrashAndEdit" icon={faTrash} /> 

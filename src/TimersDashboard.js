@@ -7,14 +7,14 @@ import './index.css';
 export default function TimersDashboard() {
   const [timers,setTimers]=useState([
     {
-      id:1,
+      id:Math.random(),
       title: "Practice squat",
       project: "Gym Chores",
       elapsed: 5456099,
       runningSince: Date.now(),
       },
       {
-      id:2,
+      id:Math.random(),
       title: "Bake squash",
       project: "Kitchen Chores",
       elapsed: 1273998,
