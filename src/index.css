@@ -1,6 +1,36 @@
 .timer {
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+   
+}
+.TimerForm {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap:2;
+    justify-content: center;
+    align-items: center;
+   
 }
 .toggleAddButton {
-    width: 20em;
+    background-color: brown;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions {
+margin: 0.5em;    
+}
+.buttonsEdit {
+    margin: 0.5em;
 }

@@ -12,7 +12,7 @@ export default function ToggleableTimerForm() {
   } else {
     return (
       <div className="ui basic content center aligned segment">
-        <button className="toggleAddButton">
+        <button className="btn btn-secondary">
           <FaPlus/>
         </button>
       </div>
