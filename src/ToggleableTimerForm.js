@@ -1,18 +1,28 @@
-import React from "react";
+import React, {useState} from "react";
 
 import TimerForm from "./TimerForm";
 
-export default function ToggleableTimerForm(isOpen) {
-  const state = {
-    isOpen: false,
-    };
-
+export default function ToggleableTimerForm(props) {
+  const [isOpen,setIsOpen] = useState(false);
+   
   const handleFormOpen = () => {
-      this.setState({ isOpen : true})
-
+      setIsOpen(true);
   }
-  if (state === isOpen) {
-    return <TimerForm />;
+
+  const handleFormClose = () => {
+    setIsOpen(false);
+}
+
+const handleFormSubmit = (timer) => {
+  props.onFormSubmit(timer);
+  setIsOpen(false);
+}
+
+  if (isOpen) {
+    return <TimerForm 
+    onFormSubmit={handleFormSubmit} 
+    onFormClose={handleFormClose}/>
+
   } else {
     return (
       <div className="toggableTimerForm">

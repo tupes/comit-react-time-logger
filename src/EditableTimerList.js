@@ -11,7 +11,8 @@ export default function EditableTimerList({statetimers}) {
     title={timer.title}
     project={timer.project}
     elapsed={timer.elapsed}
-    runningSince={timer.runningSince} />
+    runningSince={timer.runningSince}
+    onFormSubmit={statetimers.onFormSubmit} />
   )  
   ) 
   

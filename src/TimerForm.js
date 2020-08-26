@@ -1,38 +1,55 @@
-import React from "react";
+import React, {useState} from "react";
+import uuid from "uuid";
 
 export default function TimerForm(props) {
-  const submitText = props.title ? 'Update' : 'Create';
+  const submitText = props.id ? 'Update' : 'Create';
+  const [title,setTitle] = useState("");
+  const [project,setProject] = useState("");
   
-  const state = {
-    title: props.title || '',
-    project: props.project || '',
-    }
+  const handleSubmit = () => {
+    props.onFormSubmit(
+      {
+      id: uuid.v4(),
+      title: title,
+      project: project
+      }
+    )
+  }  
 
    const handleTitleChange = (e) => {
-      this.setState({ title: e.target.value });
+      setTitle(
+        { title: e.target.value } 
+         )
+         e.preventDefault();   
       }
 
    const handleProjectChange = (e) => {
-      this.setState({ project: e.target.value });
-      }
+
+      setProject(
+        { project: e.target.value }
+        )
+        e.preventDefault();
+    }
 
   return (
     <div className='timer-form'>
           <div className='timer-form-title'>
             <label>Title</label><br/>
             <input type="text" 
-            value={state.title} onChange={handleTitleChange} />
+            value={props.title} 
+            onChange={handleTitleChange} name="title"/>
           </div> 
 
-          <div classname='timer-form-project'> 
+          <div className='timer-form-project'> 
             <label>Project</label><br/>
             <input type="text" 
-            value={state.project} onChange={handleProjectChange} />
+            value={props.project} 
+            onChange={handleProjectChange} name="project"/>
           </div>
 
           <div className='update-cancel-buttons'>
-            <button value={submitText}>Update</button>
-            <button>Cancel</button>
+            <button onClick={handleSubmit}>{submitText}</button>
+            <button onClick={props.onFormClose}>Cancel</button>
           </div>
   </div>        
   )

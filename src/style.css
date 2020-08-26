@@ -85,8 +85,7 @@
 
 .right-floated-edit-icon, .right-floated-trash-icon{
   color:darkslategray;
-  font-size: larger;
-  position: relative;
+  font-size: x-large;
 }
 
 .toggableTimerForm{
@@ -99,15 +98,7 @@
   background-color: rgb(146,215,185);
 }
 
-.timer-form-title {
-  font-family: Helvetica, Arial,sans-serif ;
-  font-size: medium;
-  padding-bottom: 0.25rem;
-  padding-top: 0.25rem;
-  font-weight: bolder;
-}
-
-.timer-form-project {
+.timer-form-title, .timer-form-project {
   font-family: Helvetica, Arial,sans-serif ;
   font-size: medium;
   padding-bottom: 0.25rem;
