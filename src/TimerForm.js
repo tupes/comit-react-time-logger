@@ -6,7 +6,7 @@ export default function TimerForm(props) {
   const [title,setTitle] = useState("");
   const [project,setProject] = useState("");
   
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     props.onFormSubmit(
       {
       id: uuid.v4(),
@@ -14,20 +14,16 @@ export default function TimerForm(props) {
       project: project
       }
     )
+    e.preventDefault();   
   }  
 
    const handleTitleChange = (e) => {
-      setTitle(
-        { title: e.target.value } 
-         )
-         e.preventDefault();   
+      setTitle(e.target.value)
+        e.preventDefault();   
       }
 
    const handleProjectChange = (e) => {
-
-      setProject(
-        { project: e.target.value }
-        )
+      setProject(e.target.value)
         e.preventDefault();
     }
 
