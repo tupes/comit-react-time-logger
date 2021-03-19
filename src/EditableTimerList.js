@@ -2,12 +2,13 @@ import React from "react";
 
 import EditableTimer from "./EditableTimer";
 
-export default function EditableTimerList({timers}) {
+export default function EditableTimerList({timers,onFormSubmit}) {
   
   return (
     <div id="timers">
       {timers.map((timer)=>(
         <EditableTimer
+        onFormSubmit={onFormSubmit}
         key={timer.id}
         id={timer.id}
         title={timer.title}

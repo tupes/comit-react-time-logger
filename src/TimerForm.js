@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 export default function TimerForm(props) {
-  const submitText= props.title?"Update":"Create";
+  const submitText= props.id?"Update":"Create";
   const [title,setTitle]=useState("");
   const [project,setProject]=useState("");
   const handleTitleChange=(e)=>{
@@ -11,12 +12,15 @@ export default function TimerForm(props) {
     setProject(e.target.value);
   }
  const  handleSubmit = () => {
+   const newid=props.id?props.id:uuidv4();
     props.onFormSubmit({
-    id: 3,
+    id:newid,
     title: title,
     project: project
     });
+    
     };
+    
   
   return (
     <div className="ui centered card">
@@ -31,12 +35,12 @@ export default function TimerForm(props) {
             <input type="text" defaultValue={props.project} name="project"  onChange={handleProjectChange}/>
           </div>
           <div className="ui two bottom attached buttons'>">
-            <button className="ui basic blue button" onClick={handleSubmit}>
-              {submitText}
-            </button>
-            <button className="ui basic red button" onClick={props.onFormClose}>
-              Cancel
-            </button>
+             <button className="ui basic blue button" onClick={handleSubmit}>
+                {submitText}
+              </button>
+              <button className="ui basic red button" onClick={props.onFormClose}>
+                Cancel
+              </button>
           </div>
         </div>
       </div>
